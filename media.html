@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+         
+        .col{
+            float:left;
+            width:100%;
+            padding: 20px;
+            background-color: blue;
+        }
+        .topnav{
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .topnav a{
+            float:none;
+            display: block;
+            color:#FFF;
+            text-decoration: none;
+            text-align: center;
+            padding: 14px 16px;
+            font-size: 20px;
+        }
+        .topnav a:active{
+            background-color: gray;            
+        }
+
+        @media all and (min-width:600px) {
+            .col{
+                width:50%;
+                background-color: crimson;
+            }
+            .topnav a{
+                float:left
+            }
+            .topnav a:hover{
+                background-color: gray;
+            }
+        }
+
+        @media all and (min-width:992px){
+            .col{
+                width:25%;
+                background-color: cyan;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="topnav">
+        <a href="#">Home</a><a href="#">About</a><a href="#">Contact</a>
+    </nav>
+    <div class="row">
+        <div class="col">
+            <h2>Col</h2><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, repellendus. Recusandae dolores qui veritatis, mollitia, quia accusamus dolorum quos repellat minus eaque minima ex voluptatum repudiandae quae veniam blanditiis nemo.</p>
+        </div>
+        <div class="col">
+            <h2>Col</h2><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, repellendus. Recusandae dolores qui veritatis, mollitia, quia accusamus dolorum quos repellat minus eaque minima ex voluptatum repudiandae quae veniam blanditiis nemo.</p>
+        </div>
+        <div class="col">
+            <h2>Col</h2><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, repellendus. Recusandae dolores qui veritatis, mollitia, quia accusamus dolorum quos repellat minus eaque minima ex voluptatum repudiandae quae veniam blanditiis nemo.</p>
+        </div>
+        <div class="col">
+            <h2>Col</h2><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, repellendus. Recusandae dolores qui veritatis, mollitia, quia accusamus dolorum quos repellat minus eaque minima ex voluptatum repudiandae quae veniam blanditiis nemo.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

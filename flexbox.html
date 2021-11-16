@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .row{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .col{
+            flex:25%;
+            padding: 30px;
+        }
+
+
+        @media all and (min-width:600px){
+            .row{
+                flex-direction: row;
+            }
+            .col{
+                flex:50%;
+            }
+        }
+
+        @media all and (min-width:992px){
+            .row{
+                flex-direction: row;
+            }
+            .col{
+                flex:25%;
+            }
+        }
+    </style>
+</head>
+<body>
+     <div class="row">
+        <div class="col">
+            <h2>Col</h2><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, repellendus. Recusandae dolores qui veritatis, mollitia, quia accusamus dolorum quos repellat minus eaque minima ex voluptatum repudiandae quae veniam blanditiis nemo.</p>
+        </div>
+        <div class="col">
+            <h2>Col</h2><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, repellendus. Recusandae dolores qui veritatis, mollitia, quia accusamus dolorum quos repellat minus eaque minima ex voluptatum repudiandae quae veniam blanditiis nemo.</p>
+        </div>
+        <div class="col">
+            <h2>Col</h2><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, repellendus. Recusandae dolores qui veritatis, mollitia, quia accusamus dolorum quos repellat minus eaque minima ex voluptatum repudiandae quae veniam blanditiis nemo.</p>
+        </div>
+        <div class="col">
+            <h2>Col</h2><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, repellendus. Recusandae dolores qui veritatis, mollitia, quia accusamus dolorum quos repellat minus eaque minima ex voluptatum repudiandae quae veniam blanditiis nemo.</p>
+        </div>
+    </div>
+</body>
+</html>
